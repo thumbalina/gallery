@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://api.pexels.com/v1">
+</head>
+
+<body>
+
+    <div class="container" id="thisdiv">
+
+        <div class="row">
+            <div class="col">
+                <img src="https://source.unsplash.com/random/a" width="304" height="236">
+            </div>
+            <div class="col">
+                <img src="https://source.unsplash.com/random/b" width="304" height="236">
+
+            </div>
+            <div class="col">
+                <img src="https://source.unsplash.com/random/c" width="304" height="236">
+
+            </div>
+        </div> 
+        <br>
+        
+
+            <div class="row">
+                <div class="col"><img src="https://source.unsplash.com/random/d" width="304" height="236"></div>
+                <div class="col"><img src="https://source.unsplash.com/random/e" width="304" height="236"></div>
+                <div class="col"><img src="https://source.unsplash.com/random/f" width="304" height="236"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col"><img src="https://source.unsplash.com/random/g" width="304" height="236"></div>
+                <div class="col"><img src="https://source.unsplash.com/random/h" width="304" height="236"></div>
+                <div class="col"><img src="https://source.unsplash.com/random/i" width="304" height="236"></div>
+            </div>
+
+        
+           
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-primary btn-lg float-center" data-toggle="modal" data-target="#tmodal" onclick="refreshgallery()">Click Me</button>
+    </div>
+    
+    <div id="tmodal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <form id="form-add-admin" method="post" action="">
+            <div class="modal-dialog"> 
+                <div class="modal-content"> 
+                    <div class="modal-header"> 
+                        <h4 class="modal-title">gallery refreshes in...</h4>    
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>              
+                    </div> 
+                    <div class="modal-body"> 
+                        <p id="countdown">10</p>
+                    </div> 
+                    <div class="modal-footer"> 
+                       
+                        <button type="button" class="btn btn-danger waves-effect waves-light" data-dismiss="modal">Cancel</button>
+                    </div> 
+                </div> 
+            </div>
+        </form>
+    </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.1.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+<script src="static/js/gallery.js"></script>
+
+</html>
